@@ -8,7 +8,7 @@ I only explain how the function named cat works, for the function named dog is t
 
 ```
 D: the array where texts of diagnosis are stored
-W: the array where words are stored
+W: the 2D array where words are stored
 N: the max amount of words to be combined
 T: the threshold of frequency, words whose frequency < T will not be added to W
 ```
