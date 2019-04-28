@@ -1,5 +1,5 @@
 #Zctp
-========
+
 Zctp is a tool for word frequency analysis in clinical area. Because clinical texts are different from other texts, many text processing tools, such as jieba, can not finish tasks satisfactorily. Hence I proposed an algorithm based on jieba, inspired from k-mer counting algorithms, to help our team finish clinical data analysis.
 
 Sketch of algorithm:
