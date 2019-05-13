@@ -155,7 +155,7 @@ def cat(df, col, threshold, num = 5):
 def dog_1(record, word):
     n = 0
     for i in range(0, len(record) - len(word) + 1):
-        n += (matching(record, word, i, len(word)) == len(word))
+        n += (matching(record, word, i) == len(word))
     return n
 
 def dog(df, col, word):
