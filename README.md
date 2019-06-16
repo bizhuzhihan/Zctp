@@ -4,8 +4,6 @@ Zctp is a tool for word frequency analysis in clinical area. Because clinical te
 
 Sketch of algorithm:
 --------
-I only explain how the function named cat works, for the function named dog is too simple.
-
 ```
 D: the array where texts of diagnosis are stored
 W: the 2D array where words are stored
