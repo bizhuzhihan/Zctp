@@ -3,9 +3,7 @@
 '''
 Usage:
     cat(df, col, threshold, num = 5)
-    dog(df, col, word)
-
-# cat function
+    
 Function:
     calculate the frequency of words
 Input:
@@ -17,17 +15,7 @@ Output:
     pd.DataFrame
         freq: the frequency of a word
         words: ...
-
-# dog function
-Function:
-    match the array of string with a word(string)
-Input:
-    df: a pandas.DataFrame
-    col: the label of the selected column (eg. '诊断')
-    word: a string you want to match with
-Output:
-    array of bool
-
+        
 2019.04.27 written by Zhu.      Verson: 1.1
 '''
 
@@ -147,23 +135,3 @@ def cat(df, col, threshold, num = 5):
             warehouse = warehouse.drop(i)
             
     return warehouse
-
-####################################################################################################
-# building a array of matching
-##################################################
-# searching in one record
-def dog_1(record, word):
-    n = 0
-    for i in range(0, len(record) - len(word) + 1):
-        n += (matching(record, word, i) == len(word))
-    return n
-
-def dog(df, col, word):
-    diag = df[col]
-    match = []
-    for i in range(0, len(diag)):
-        if(dog_1(diag[i], word)):
-            match.append(1)
-        else:
-            match.append(0)
-    return match
